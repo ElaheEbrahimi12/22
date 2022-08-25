@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+</head>
+<style>
+   body {
+            margin: 0;
+            font-family: iranyekan,sans-serif;
+            direction:rtl;
+            background-color: #f3efef;
+        }
+
+ .header {
+   overflow: hidden;
+   background-color: white;
+   padding: 15px 30px;
+   box-shadow:2px 2px 2px #ccc;
+}
+
+.header a{
+  color: grey;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 25px;
+}
+      
+.header a.active {
+  background-color: orange;
+  color: white;
+}
+a {color: #000; text-decoration: none;}
+
+.header-right{
+  float:right;
+  margin-right:50px;
+}
+ .header .header-right a {                     
+            border-radius: 4px;
+  }
+.header .header-right a:hover {
+            background-color:orange;
+            color: gray;
+ }
+
+.header-left{
+  float:left;
+}
+.header-left .search{
+  border-left:1px solid #000;
+} 
+.Strip-title {
+  display: flex;
+  background-color: #444b54;
+  color: #f8f9fa;
+  height: 81px;
+  }
+.page-title {
+  display: flex;
+  margin-right: 174px;
+}
+.text-page-title {
+  color: slategrey;
+  font-size: 14px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-right: -33px;
+}
+.text-page-title a:hover {
+  color: #424242;
+}
+.card-first {
+  display: flex;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 3px 0 rgba(24, 23, 24, .03);
+  margin-right: 120px;
+  margin-left: 386px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 6px;
+  border-top-color: slategrey;
+}
+.card-second {
+  display: flex;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 3px 0 rgba(24, 23, 24, .03);
+  margin-top: -9px;
+  margin-right: 120px;
+  margin-left: 386px;
+  padding-right: 20px;
+  
+}
+.card-third {
+  display: flex;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 3px 0 rgba(24, 23, 24, .03);
+  margin-top: -9px;
+  margin-right: 120px;
+  margin-left: 386px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 37px;
+}
+.p-card {
+  font-size: 15px;
+  color: #555;
+  line-height: 2.5;
+}
+.card-fourth {
+  display: flex;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 3px 0 rgba(24, 23, 24, .03);
+  margin-right: 120px;
+  margin-left: 386px;
+  padding-right: 22px;
+  margin-top: -9px;
+}
+.passengers {
+  color:#0197f6;
+  margin-right: 80px;
+  line-height: 2;
+}
+.passengers2 {
+  color:#0197f6;
+  margin-right: 80px;
+  line-height: 2;
+  margin-right: 274px;
+  margin-top: -68px;
+  margin-top: -71px;
+}
+.time {
+  color:#17191b;
+  line-height: 2;
+  margin-right: -70px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.time2 {
+  color:#17191b;
+  line-height: 2;
+  margin-right: 317px;
+  font-size: 15px;
+  margin-top: -31px;
+}
+.card-fifth {
+  display: flex;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 3px 0 rgba(24, 23, 24, .03);
+  margin-top: -9px;
+  margin-bottom: 876px;
+  margin-right: 120px;
+  margin-left: 386px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.card-fifth-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  margin-right: 178px;
+}
+.card-fifth-row2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-right: 51px;
+}
+.input {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  margin-right: 9px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+}
+.input2 {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  margin-right: 9px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+}
+.input3 {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 5px;
+  margin-bottom: 24px;
+  margin-right: 29px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+}
+.subject {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+  margin-right: -164px;
+  padding-left: 195px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.message {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  margin-right: -163px;
+  padding-top: 10px;
+  padding-bottom: 113px;
+  padding-left: 202px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+}
+.send {
+  display: flex;
+  background-color: #1ba1d6;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-color: #0197f6;
+  border-radius: 16px;
+}
+.send:active {
+  text-decoration: none;
+}
+.card-special {
+  position: absolute;
+  display: inline-block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #f7f7f7;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+  margin-right: 1007px;
+  margin-top: -45px;
+  padding-top: 8px;
+  padding-right: 10px;
+  border-bottom: 1px solid #ededf0;
+}
+.first-section-special {
+  background-color: #f7f7f7;
+  margin-top: 14px;
+  display: flex;
+}
+.second-section-special {
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  margin-right: -10px;
+  padding-left: 9px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.second-section-special .details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.second-section-special .details2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: -76px;
+  margin-right: 3px;
+}
+.img-tour {
+  border-radius: 6px;
+  margin-right: 12px;
+}
+.img-tour2 {
+  border-radius: 6px;
+  margin-right: -112px;
+  margin-top: 21px;
+}
+.price {
+  background-color: #f5f5f5;
+  color: #666;
+  margin-top: 20px;
+  margin-right: -115px;
+  height: 40px;
+  display: grid;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+img {border-radius: 3px;}
+.price2 {
+  display: flex;
+  background-color: #f5f5f5;
+  color: #666;
+  margin-top: 34px;
+  margin-right: -115px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.card-news {
+  position: absolute;
+  display: inline-block;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #f7f7f7;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+  margin-top: 370px;
+  margin-right: 1007px;
+  padding-right: 20px;
+  padding-left: 1px;
+}
+.img-news {
+  border-radius: 6px;
+  margin-right: 12px;
+}
+.img-news2 {
+  border-radius: 6px;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+.img-news3 {
+  border-radius: 6px;
+}
+.first-section-news {
+  display: flex;
+  background-color: #f7f7f7;
+}
+.second-section-news {
+  display: ruby;
+  background-color: #fff;
+  position: relative;
+  margin-top: 34px;
+  margin-right: -152px;
+  padding-left: 9px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.third-section-news {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-right: -117px;
+  margin-top: 55px;
+  padding-left: 32px;
+  padding-bottom: 13px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.fourth-section-news {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-right: -115px;
+  margin-top: 55px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-right: 8px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.fifth-section-news {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-right: -112px;
+  margin-top: 53px;
+  padding-left: 25px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 8px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.details-news {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.card-trip {
+  position: absolute;
+  display: inline-block;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #f7f7f7;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+  margin-top: 906px;
+  margin-right: 1008px;
+  padding-right: 20px;
+  padding-left: 1px;
+}
+.img-trip {
+  border-radius: 6px;
+  margin-right: 14px;
+}
+.img-trip1 {
+  border-radius: 6px;
+  margin-right: 12px;
+}
+.second-section-trip {
+  display: ruby;
+  background-color: #fff;
+  position: relative;
+  margin-top: 34px;
+  margin-right: -198px;
+  padding-left: 17px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.third-section-trip {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-right: -118px;
+  padding-top: 14px;
+  padding-left: 30px;
+  padding-bottom: 12px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.fourth-section-trip {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-right: -117px;
+  padding-top: 14px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.fifth-section-trip {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-right: -116px;
+  padding-top: 14px;
+  padding-left: 2px;
+  padding-bottom: 12px;
+  border-bottom-left-radius:2px;
+  border-bottom-right-radius: 2px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.card-videos {
+  position: absolute;
+  display: inline-block;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #f7f7f7;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+  margin-top: 1457px;
+  margin-right: 1008px;
+  padding-right: 20px;
+  
+}
+.second-section-videos {
+  display: ruby;
+  background-color: #fff;
+  position: relative;
+  margin-top: 34px;
+  margin-right: -193px;
+  padding-left: 5px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.third-section-videos {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-right: -111px;
+  padding-top: 14px;
+  padding-left: 4px;
+  padding-bottom: 12px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.fourth-section-videos {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-right: -112px;
+  margin-top: 11px;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-right: 4px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.fifth-section-videos {
+  display: ruby;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-right: -115px;
+  padding-top: 14px;
+  padding-left: 4px;
+  padding-bottom: 12px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: 1px solid #ededf0;
+  box-shadow: 0 3px 4.75px .25px rgba(24,23,24,.03);
+}
+.video-item {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-right: -57px;
+  margin-top: -36px;
+}
+.img-videos {
+  border-radius: 6px;
+  margin-right: 7px;
+}
+.footer-home {
+  display: flex;
+  background-color: #575d65;
+  width: 100%;
+  height: 38px;
+  padding-top: 17px;
+  color: #adb5bd;
+}
+.img-home {
+  margin-right: 78px;
+  margin-top: 3px;
+}
+.flex-container-footer {
+  display: flex;
+  background-color: #444b54;
+  flex-direction: column;
+}
+.top-search .container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.top-search {height: 320px;}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.footer-list {
+  width: 23%;
+  padding: 0 8px;
+}
+.footer-list a:hover {
+  color: white;
+}
+.flex-container-footer .footer-header {
+  display: flex;
+  font-size: 18px;
+  color: #f8f9fa;
+  font-weight: 700;
+  margin-right: 14%;
+  font-family: 'Times New Roman', Times, serif;
+} 
+.a-footer{
+  text-decoration: none;
+  color:  lightslategray;
+  margin-left: 12%;
+}
+.p-footer {
+  margin-bottom: 1.875rem;
+  color: lightslategray;
+  padding: 2px;
+}
+.flex-container-footer .mobile-number {
+  margin-bottom: .625rem;
+  height: 50px;
+  border-radius: 25px;
+  border-color: whitesmoke;
+  box-shadow: #f8f9fa;
+}
+.flex-container-footer .member {
+  border-radius: 25px;
+  height: 50px;
+  background-color: dodgerblue;
+  color: whitesmoke;
+  border-color: dodgerblue;
+  box-shadow: cadetblue;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #3d434b;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
+ul {list-style: none;}
+
+.ul-nav {
+  list-style:none;
+  display: flex;
+}
+.flex-container-footer1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-menu {display: flex;}
+.flex-container-footer1 .footer-menu .footer-middle {
+  display: flex;
+  height: 45px;
+}
+.flex-container-footer1 .footer-menu .footer-middle .li-middle {
+ display: flex;
+ height: 100%;
+ margin-left: 1.25rem;
+ flex-direction: column;
+}
+li {padding: 8px;}
+.a-middle-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  flex-direction: column;
+}
+.ul-nav2 {
+  list-style: none;
+  display: flex;
+  margin-right: 110px;
+}
+.li-middle-icons {
+  display: flex;
+  height: 100%;
+  margin-left: 1.25rem;
+  flex-direction: column;
+  float: left;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left;
+}
+.third-part-footer {
+  background-color: #363c43;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-header-third{
+  display: ruby-text;
+  font-size: 25px;
+  color: #f8f9fa;
+  font-weight: 700;
+  margin-right: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 125px;
+}
+.footer-text {
+  display: ruby-base-container;
+  font-size: 10px;
+  line-height: 2px;
+  color: #adb5bd;
+  margin-right: 40px;
+}
+.fourth-part-footer {
+  border-top: solid 2px #666;
+  background-color: #444b54;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.copyright-part {
+  color: #dee2e6;
+  display: ruby;
+  margin-right: 30px;
+  margin-left: -3px;
+  font-size: 15px;
+}
+.img-copyright {
+  margin-right: 7px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 7px;
+  background-color: #363c43;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+</style>
+<body>
+<header>
+    <div class="header">
+      <div id="logowrapper">
+        <a href="#">
+            <img src="data:image/png;base64,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" alt="last second picture" width="260" height="60" style="display: flex;float:right;margin-top: 10px;margin-right: 20px;margin-bottom: 10px;" >
+            </a>
+       </div> 
+      
+        <div class="header-right">
+            <a href="#خانه" style="margin-right:-8px;">خانه</a>
+            <a href="#تور">تور</a>
+            <a href="#هتل">هتل</a>
+            <a href="#بلیط هواپیما">بلیط هواپیما</a>
+            <a href="#سفرنامه">سفرنامه</a>
+            <a href="#رستوران">رستوران</a>
+            <a href="#جاذبه گردشگری">جاذبه گردشگری</a>
+            <a href="#ویدیو">ویدیو</a>
+            <a href="#تماس با ما ">تماس با ما</a>
+        </div>
+      <div class="header-left">
+        <a class="search" href="#" style="border-left:1px solid #ccc;"> جستجو <img src="https://iconape.com/wp-content/png_logo_vector/magnifier.png" width="20" height="20"></a>
+        <a class="login" href="#" style="color:orangered"> ورود/ عضویت </a>
+      </div>
+    </div>
+
+
+     
+        <div class="Strip-title"><span style="font-size: 20px;margin-top: 27px;margin-right: 144px;">تماس با ما</span></div>
+        <aside>
+          <div class="card-special">
+            <div class="first-section-special">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/backpack-50-129941.png" width="24" height="28" style="margin-bottom: 13px;"><span style="margin-right: 18px;font-size: 19px;margin-top: -3px;color: #666;">تورهای ویژه</span>
+            </div>
+            <div class="second-section-special">
+
+              <a href="#"><img src="https://www.imna.ir/d/2020/02/22/4/1624868.jpg" width="100" height="90" class="img-tour"></a>
+              <div class="details">
+                <div style="color: #424242;font-weight: bold;font-size: 13px;margin-bottom: 7px;">تور روسیه مرداد و <br>شهریور 1401</div>
+                <div><img src="https://cdn-icons-png.flaticon.com/512/4164/4164916.png" width="16" height="16" style="margin-bottom: -2px"><span style="color: #7c8187;margin-right: 4px;font-size: 11px;">آویسا الهه باستان</span></div>
+                <div><img src="https://www.freeiconspng.com/thumbs/calendar-icon-png/calendar-date-event-month-icon--19.png" width="16" height="16" style="margin-bottom: -2px;"><span style="color: #7c8187;margin-right: 4px;font-size: 11px;">ایر فلوت</span></div>
+                <div class="price"><span style="font-size: 14px;margin-top: 7px;margin-right: 7px;border-bottom: 1px solid #ededf0;margin-bottom: -9px;">قیمت از:<span style="color: mediumaquamarine;margin-right: 20px;">24,990,000</span><span style="color: #666;font-size: 12px;">تومان + </span><span style="color: mediumaquamarine;">100</span><span style="font-size: 12px;">دلار</span></div>
+
+
+                  <a href="#"><img src="https://setare.com/files/1400/05/21/alibaba-1.jpg" width="100" height="90" class="img-tour2"></a>
+                  <div class="details2">
+                    <div style="color: #424242;font-weight: bold;font-size: 13px;margin-bottom: 7px;margin-top: -15px;">تور کیش مرداد 1401</div>
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/4164/4164916.png" width="16" height="16" style="margin-bottom: -2px"><span style="color: #7c8187;margin-right: 4px;font-size: 11px;">ارزین سیر ایرانیان</span></div>
+                    <div><img src="https://www.freeiconspng.com/thumbs/calendar-icon-png/calendar-date-event-month-icon--19.png" width="16" height="16" style="margin-bottom: -2px;"><span style="color: #7c8187;margin-right: 4px;font-size: 11px;">زاگرس</span></div>
+                    <div class="price2"><span style="font-size: 14px;;margin-top: 7px;margin-right: 7px;margin-bottom: -9px;">قیمت از:</span><span style="color: mediumaquamarine; margin-right: 62px;margin-top: 6px;">1,790,000</span><span style="color: #666;font-size: 12x;margin-top: 9px;margin-right: 5px;font-size: 12px;">تومان</span></div>
+                  </div>
+              </div>
+          </div>
+            </div>
+          <div class="card-news">
+            <div class="first-section-special">
+              <img src="https://cdn-icons-png.flaticon.com/512/4363/4363382.png" width="24" height="24" style="margin-bottom: 13px;"><span style="display: block ruby;margin-right: 18px;font-size: 19px;margin-top: -3px;color: #666;">آخرین خبرها</span>
+            <div class="second-section-news" >
+              <a href="#"><img src="https://last-cdn.com/2022/08/10/YT3CyUE0S7UhHgWQp7alPC5T2seREimo3iA3bRWG--100x80.jpg" width="100" height="90" class="img-news"></a>
+            <div class="details-news">
+              <div style="display: table-row-group;color: #424242;font-size: 13px;">قسمت 3 فصل 10:مصر،<br>سرزمین عجایب و رازها</div>
+            
+              <div class="third-section-news">
+                <a href="#"><img src="https://last-cdn.com/2022/08/02/YCWJXraeQlQ8lxRkmLZwO5cMBHu86GZuafmBNvZY--100x80.png" width="100" height="90" class="img-news2"></a>
+                <div class="details-news">
+                  <div style="display: table-row-group;color: #424242;font-size: 13px;">آنتالیا یا کوشی آداسی،<br>کدام برای سفرمان</div>
+                  
+                  <div class="fourth-section-news">
+                  <a href="#"><img src="https://last-cdn.com/2022/08/02/x3g8i63UdBDdPqRbCDBqmoInsbb3k6pUOyXpkEB6--100x80.jpg" width="100" height="90" class="img-news3"></a>
+                  <div class="details-news">
+                    <div style="display: table-row-group;color: #424242;font-size: 13px;">لایحه حمایت از ایرانیان<br>خارج از کشور چیست؟</div>
+                    <div class="fifth-section-news">
+                      <a href="#"><img src="https://media.karnaval.ir/uploads/2020/02/e81c46fc-1bb5-4581-b219-37ff2b582a55.jpg" width="100" height="90" class="img-news3"></a>
+                      <div class="details-news">
+                      <div style="display: table-row-group;color: #424242;font-size: 13px;">جاهای دیدنی اردبیل + <br>عکس و اطلاعات بازدید</div>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-trip">
+            <div class="first-section-special">
+              <img src="https://cdn-icons-png.flaticon.com/512/4363/4363382.png" width="24" height="24" style="margin-bottom: 13px;"><span style="display: block ruby;margin-right: 18px;font-size: 19px;margin-top: -3px;color: #666;">آخرین سفرنامه ها</span>
+            <div class="second-section-trip">
+              <a href="#"><img src="https://last-cdn.com/2022/08/09/yMZCRMoSZGdD6f9DPtT0KT3p2bWtQtlnsHW0TTjw--100x80.jpg" width="100" height="90" class="img-trip"></a>
+              <div class="details-trip">
+                <div style="display: ruby-text;margin-bottom: 22px;color: #424242;font-size: 13px;font-weight: bold;">سفری به سرزمین تزارها</div>
+                <div><img src="https://s6.uupload.ir/files/eye-icon-742345_ylsx-removebg-preview_okdu.png" width="16" height="16" style="margin-right: 8px;margin-right: 8px;margin-bottom: 3PX;"><span style="color: #666;position: absolute;font-size: 12px;margin-right: 12px;">10005</span></div>
+                <div class="third-section-trip">
+                  <a href="#"><img src="https://hameghlim.com/wp-content/uploads/2022/01/galata-tower4.jpg" width="100" height="90" class="img-trip1"></a>
+                  <div class="details-trip">
+                    <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;font-weight: bold;" >کونستانتینوپولیس در <br>محاصره آب ها</div>
+                    <div><img src="https://s6.uupload.ir/files/eye-icon-742345_ylsx-removebg-preview_okdu.png" width="16" height="16" style="margin-right: 8px;margin-right: 8px;margin-bottom: 3PX;"><span style="color:  #666;position: absolute;font-size: 12px;margin-right: 12px;">2045</span></div>
+                    <div class="fourth-section-trip">
+                      <a href="#"><img src="https://safarmarket.com/blog/data/uploaded_files/431142f6ec92a7580965c829.jpg" width="100" height="90" class="img-trip1"></a>
+                      <div class="details-trip">
+                        <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;font-weight: bold;">عسلویه شهری شیرین تر <br>از عسل</div>
+                        <div><img src="https://s6.uupload.ir/files/eye-icon-742345_ylsx-removebg-preview_okdu.png" width="16" height="16" style="margin-right: 8px;margin-right: 8px;margin-bottom: 3PX;"><span style="color:  #666;position: absolute;font-size: 12px;margin-right: 12px;">1985</span></div>
+
+                        <div class="fifth-section-trip">
+                          <a href="#"><img src="https://last-cdn.com/2022/07/11/cHpMFcZ3O0muY7Y6KKY0Hib7fKneMOHsqMkuyCms--130x105.png" width="100" height="90" class="img-trip1"></a>
+                          <div class="details-trip">
+                            <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;font-weight: bold;">سفر هیجان انگیز با <br>ماشین شخصی به 15 شهر<br>ترکیه</div>
+                            <div><img src="https://s6.uupload.ir/files/eye-icon-742345_ylsx-removebg-preview_okdu.png" width="16" height="16" style="margin-right: 8px;margin-right: 8px;margin-bottom: 3PX;"><span style="color:  #666;position: absolute;font-size: 12px;margin-right: 12px;">54760</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+          <div class="card-videos">
+            <div class="first-section-special">
+              <img src="https://s6.uupload.ir/files/video-video-icon-video-vector-video-icon-vector-video-camera-icon-video-icon-set-video-vector-icons-video-app-icon-video-player-icon-vector-illustrattion-video-icon-flat-design-vector-for-web-400-2353_mkt.png" width="24" height="24" style="margin-bottom: 13px;"><span style="display: block ruby;margin-right: 18px;font-size: 19px;margin-top: -3px;color: #666;">ویدیو های مرتبط</span>
+              <div class="second-section-videos">
+                <a href="#"><img src="https://last-cdn.com/2019/04/24/jTbt2uXIeA5VbYfTxRV21LGotdDpGJn33sPcoIrC--130x105.jpeg" width="100" height="90" class="img-videos"</a>
+                <div class="details-videos">
+                  <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;margin-right: 4px;">بهار دیدنی شیراز در باغ ارم<br>را در این ویدیو ببینید</div>
+                  <div class="video-item"><img src="https://s6.uupload.ir/files/lay-black-button-video-play-button-transparent-11562849196ivktugvwzt(1)_kosb.png" width="34" height="34" style="margin-right: -11px;margin-top: -19px;"></div>
+                  <div><img src="https://last-cdn.com/v1/avatars/foqz1qps2yspkgmrqjqrtjigt7g1jbfwwothetez--16x16.jpg" width="16" height="16" style="border-radius: 12px;margin-right: 4px;margin-left: 10px;margin-bottom: -3px;"><span style="color: #666;font-size: 11px;">علی عباسی</span></div>
+                  
+                  <div class="third-section-videos">
+                  <a href="#"><img src="https://last-cdn.com/2021/11/15/KUeP24J08aRc0T9RkKpZgN8heQQxceLHDlUGmzws--130x105.jpeg" width="100" height="90" class="img-videos"></a>
+                  <div class="details-videos">
+                    <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;margin-right: 4px;">شما این غذای عجیب ترکی<br>را امتحان می کنید؟</div>
+                    <div class="video-item"><img src="https://s6.uupload.ir/files/lay-black-button-video-play-button-transparent-11562849196ivktugvwzt(1)_kosb.png" width="34" height="34" style="margin-right: -13px;margin-top: -19px;"></div>
+                    <div><img src="https://last-cdn.com/v1/avatars/2020/04/14/Tz2c1akjtqt82iaE7boNdyxxz3QlvSMHhfGahNhF--16x16.jpeg" width="16" height="16" style="border-radius: 12px;margin-right: 4px;margin-left: 10px;margin-bottom: -3px;"><span style="color: #666;font-size: 11px;">لست سکند</span></div>
+
+                    <div class="fourth-section-videos">
+                      <a href="#"><img src="https://last-cdn.com/2021/11/28/REAYjWB86nicq0LYSiobd56KT87hpREl3gVH4Qse--130x105.jpeg" width="100" height="90" class="img-videos"></a>
+                      <div class="details-videos">
+                        <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;margin-right: 4px;">پنج حقیقت درباره<br>موریس</div>
+                        <div class="video-item"><img src="https://s6.uupload.ir/files/lay-black-button-video-play-button-transparent-11562849196ivktugvwzt(1)_kosb.png" width="34" height="34" style="margin-right: -13px;margin-top: -19px;"></div>
+                        <div><img src="https://last-cdn.com/v1/avatars/2020/04/14/Tz2c1akjtqt82iaE7boNdyxxz3QlvSMHhfGahNhF--16x16.jpeg" width="16" height="16" style="border-radius: 12px;margin-right: 4px;margin-left: 10px;margin-bottom: -3px;"><span style="color: #666;font-size: 11px;">لست سکند</span></div>
+
+                        <div class="fifth-section-videos">
+                          <a href="#"><img src="https://last-cdn.com/2021/02/06/QKTJQjYTFmd2DDrDC5iGj4V7Fj47voprpKRdDCaM--130x105.jpeg" width="100" height="90" class="img-videos"></a>
+                          <div class="details-video">
+                          <div style="display: flex;margin-bottom: 22px;color: #424242;font-size: 13px;margin-right: 4px;">آیا می دانستید نقشه جهان<br>اشتباه است؟</div>
+                          <div class="video-item"><img src="https://s6.uupload.ir/files/lay-black-button-video-play-button-transparent-11562849196ivktugvwzt(1)_kosb.png" width="34" height="34" style="margin-right: -13px;margin-top: -19px;"></div>
+                          <div><img src="https://last-cdn.com/v1/avatars/2020/04/14/Tz2c1akjtqt82iaE7boNdyxxz3QlvSMHhfGahNhF--16x16.jpeg" width="16" height="16" style="border-radius: 12px;margin-right: 4px;margin-left: 10px;margin-bottom: -3px;"><span style="color: #666;font-size: 11px;">لست سکند</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          </aside>
+          <main>
+        <div class="page-title">
+        <a href="#" class="text-page-title">لست سکند  /  </a>
+        <span style="color: #363c43;margin-right: 7px;font-size: 14px;padding-top: 23px;position: static;"><strong>  تماس با ما  </strong></span>
+        </div>
+        <div class="card-first">
+          <p class="p-card">لست سکند همراه و در کنار شماست تا شما با خیالی راحت تور مسافرتی خود را تهیه کنید. ما از سال 1389 در زمینه خدمت رسانی به <br>مسافران و آژانس های مسافرتی به عنوان "<strong>قدیمی ترین</strong>" و "<strong>مطمئن ترین </strong>" مرجع سفر در حال خدمت رسانی هستیم.</p>
+          </div>
+          <div class="card-second">
+          <p class="p-card">در لست سکند آژانسهای مسافرتی، معتبر خوشنام و دارای تمامی مجوزهای لازم گرد هم آمده اند تا تجربه ای بی نظیر برای شما فراهم<br>شود. شما میتوانید تورهای خود را به صورت<strong>تلفنی</strong> و یا<strong>آنلاین</strong>از آژانس های فعال در لست سکند فراهم کنید.</p>
+          </div>
+          <div class="card-third">
+            <p class="p-card">اگر هر گونه سوالی دارید و اگر نیاز به مشورت دارید تلفن زیر و فرم تماس با ما در خدمت شماست تا با کارشناسان لست سکند تماس<br>برقرار کنید:</p>
+          </div>
+          <hr style="display: block;color: #ebf0f5;margin-top: 0; margin-right: 119px;margin-left: 386px;">
+          <div class="card-fourth">
+            <div class="passengers"><h3 style="margin-top: 37px;">ویژه مسافران و کاربران</h3>
+            <div class="passengers2"><h3 style="margin-top: 29px;margin-right: 42px;">ویژه کسب و کارهای گردشگری و آژانس های همکار</h3></div>
+            <div class="time">ساعت کاری: از شنبه تا پنجشنبه 9 تا 18 و جمعه ها تعطیل</div>
+            <div class="time2">ساعت کاری: از شنبه تا چهارشنبه 9 تا 18 و پنج شنبه و جمعه ها تعطیل</div>
+            <div style="color: #0197f6;margin-right: 21px;margin-top: 13px;font-size: 19px;">021-91018000</div>
+            <div style="color: #0197f6;font-size: 19px;margin-right: 454px;margin-top: -36px;">021-72956000</div>
+            </div>
+            </div>
+          </div>
+          <hr style="display: block;color: #ebf0f5;margin-top: 0; margin-right: 120px;margin-left: 386px;">
+          <div class="card-fifth">
+          <div class="card-fifth-row">
+            <form action="/my-handling-form-page" method="post">
+              <span style="color:#413f3f;font-size: 17px;margin-right: 22px;">نام و نام خانوادگی*</span>
+              <div>
+                <label for="name"></label> <input type="text" id="name" name="user_name" class="input">
+              </div>
+              <span style="color: #424242;font-size: 17px;margin-right: 25px;">موبایل*</span>
+              <div>
+                <label for="mobile"></label> <input type="text" id="mobile" name="user_mobile" class="input2">
+              </div>
+              </div>
+            </form>
+            <form action="/my-handling-form-page" method="post">
+              <div class="card-fifth-row2">
+              <span style="color: #413f3f;margin-right: 43px;margin-bottom: 10px;font-size: 17px;">ایمیل</span>
+              <div>
+                <label for="e-mail"></label><input type="email" id="e-mail" name="user-email" class="input3">
+              </div>
+              <span style="color: #413f3f;margin-right: 43px;margin-bottom: 10px;font-size: 17px;">بخش*</span>
+              <div>
+                <label for="section"></label><input type="number" id="department" class="input3">
+              </div>
+              </div>
+              <span style="color: #413f3f;margin-right: -156px;font-size: 17px;">موضوع*</span>
+              <div>
+                <label for="subject"></label><input type="text" id="subject part" class="subject">
+              </div>
+              <span style="color: #413f3f;margin-right: -149px;">پیام*</span>
+              <div>
+                <label for="message"></label><input type="text" id="message" placeholder="پیام یا مورد خاصی که بایستی توسط لست سکند مورد بررسی قرار گیرد را اینجا بنویسید." class="message">
+              </div>
+              <div class="button">
+                <button type="submit" class="send">ارسال</button>
+              </div>
+            </form>
+        </div>
+      </main>
+
+  
+      <div class="footer-home"><img src="https://o.remove.bg/downloads/ef7fe74d-37c6-4318-8a41-6412a4bce5fe/png-transparent-home-care-service-computer-icons-font-awesome-house-grey-angle-apartment-logo-removebg-preview.png" width="25" height="20" class="img-home">
+      <span style="color: #adb5bd;"> / </span><span style="color: #fff0b3;font-size: 14px;margin-right: 9px;">تماس با ما   </span>
+      </div>     
+  
+       <footer class="flex-container-footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-list">
+              <h4 class="footer-header">لینک های کاربردی</h4>
+              <ul>
+                <li><a class="a-footer" href="#">تماس با ما</a></li>
+                <li><a class="a-footer" href="#">درباره ما</a></li>
+                <li><a class="a-footer" href="#">تبلیغات</a></li>
+                <li><a class="a-footer" href="#">ثبت نام آژانس</a></li>
+                <li><a class="a-footer" href="#">ثبت نام کسب و کارها</a></li>
+              </ul>
+            </div>
+            <div class="footer-list">
+              <h4 class="footer-header">مقاصد پر طرفدار</h4>
+              <ul>
+              <li><a class="a-footer" href="#">تور استانبول</a></li>
+              <li><a class="a-footer" href="#">تور کیش</a></li>
+              <li><a class="a-footer" href="#">تور آنتالیا</a></li>
+              <li><a class="a-footer" href="#" >تور مشهد</a></li>
+              </ul>
+            </div>
+            <div class="footer-list">
+              <h4 class="footer-header">بخشهای جدید سایت</h4>
+              <ul>
+                <li><a class="a-footer" href="#">خاطرات سفر</a></li>
+                <li><a class="a-footer" href="#">پادکست رادیو ماجرا</a></li>
+                <li><a class="a-footer" href="#">بلیط هواپیما</a></li>
+                <li><a class="a-footer" href="#">برنامه سفر</a></li>
+              </ul>
+            </div>
+            <div class="footer-list">
+              <h4 class="footer-header">خبرنامه</h4>
+              <p class="p-footer">در صورتیکه تمایل دارید پیامک ها و آفرهای ما را دریافت کنید فرم زیر را تکمیل نمایید</p>
+              <input id="mobile" class="mobile-number" type="text" placeholder="شماره موبایل">
+              <div>
+              <button type="button" class="member">عضوم کن</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+     <div class="footer">
+      <ul class="ul-nav footer-middle">
+        <li style="margin-right: 30px;">
+          <img src="https://s6.uupload.ir/files/logo--white--lg.209876f_lahw.png" alt="لوگوی سفید لست سکند" width="180" height="45">
+          </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#" style="margin-right: 10px;">
+            تور
+          </a>
+        </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#">
+            هتل
+          </a>
+        </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#">
+            سفرنامه
+          </a>
+        </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#">
+            بلاگ
+          </a> 
+        </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#">
+            ویدیو
+          </a>
+        </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#">
+            آژانس ها
+          </a>
+        </li>
+        <li class="li-middle">
+          <a class="a-middle-footer" href="#">
+            تماس با ما
+          </a>
+        </li>
+      <ul class="ul-nav2 footer-middle">
+        <li class="li-middle-icons">
+          <a class="footer-icon" href="#"><img src="https://s6.uupload.ir/files/index-removebg-preview_kn7g.png" width="40" height="40" alt="waving icon"></a></li>
+          <li class="li-middle-icons">
+            <a class="footer-icon" href="#"><img src="https://mypcgame.ir/wp-content/uploads/aparat-icon.png" width="35" height="35" alt="Aparat icon"</a></li>
+            <li class="li-middle-icons"><a class="footer-icon"><img src="https://s6.uupload.ir/files/images_preview_rev_1_0ss6.png" width="35" height="35" alt="Telegram icon"></a></li>
+          <li class="li-middle-icons">
+            <a class="footer-icon" href="#"><img src="https://s6.uupload.ir/files/277-2773517_instagram-logo-white-logo-instagram-png-putih-transparent-removebg-preview_ip1m.png" width="40" height="40" alt="Instagram icon"></a></li>
+            <li class="li-middle-icons">
+              <a class="footer-icon" href="#"><img src="https://s6.uupload.ir/files/linkedin-icon-white-png-12-removebg-preview_tgdi.png" width="35" height="35" alt="linkedin icon"></a></li>
+      </ul>
+     </div>
+    <div class="third-part-footer">
+      <img src="https://bayanbox.ir/view/9045159040606977389/namad1.png" style="margin-right:100px;width:120px;height:160px;background-color:#f8f9fa;" alt="نماد الترونیک">
+      <img src="https://artistun.com/wp-content/uploads/2020/01/logo-compressor.png" style="margin-right:20px;width: 120px;height: 160px;background-color: #f8f9fa;" alt="نشان ثبت ملی">
+      <img src="https://ecunion.ir/logonama.png" style="margin-right: 20px;width: 120px;height:160px;background-color: #f8f9fa;" alt="اتحادیه کسب وکارهای تجاری">
+      <img src="https://last-cdn.com/site/gardeshgari-min--150x160xwt.webp" style="margin-right: 20px;width:120px;height: 160px;" alt="وزرات میراث فرهنگی و صنایع دستی">
+      <div class="footer-header-third"><span style="margin-top: 49px;">درباره لست سکند</span></div>
+      <p class="footer-text">لست سکند در سال 89 با هدف ارائه خدمات متفاوت و با کیفیت به شما عزیزان در صنعت گردشگری تاسیس شده است.</p>
+    </div>
+    <div class="fourth-part-footer">
+      <img src="https://s6.uupload.ir/files/pp-removebg-preview_xadv.png" style="margin-bottom: -19px;margin-right:120px;width: 80px;height: 80px;background-color: #444b54;" alt="copyright icon">
+      <p class="copyright-part">کلیه حقوق این سایت متعلق به خانواده لست سکند می باشد | 1401-1389 </p>
+      <p style="display:ruby;color:#f8f9fa;font-size: 13px;margin-right: 7px;">خانواده لست سکند</p>
+      <div class="img-copyright">
+      <img src="https://last-cdn.com/site/lastgram--140x40xtp.png" width="150" height="50" alt="lastgram">
+      </div>
+      <div class="img-copyright">
+        <img src="https://last-cdn.com/site/mosaferan--140x40xtp.png" width="150" height="50" alt="Mosaferan">
+      </div>
+      <div class="img-copyright">
+        <img src="https://last-cdn.com/site/car--140x25xtp.png" width="150" height="50" alt="Hamkari">
+      </div>
+    </div>
+      </footer>
+    
+</body>
+</html>
